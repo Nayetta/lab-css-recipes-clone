@@ -11,6 +11,11 @@ html {
   font-size: 18px;
 }
 
+.tutto {
+  width: 80%;
+  margin: 0 auto;
+}
+
 /* Capçalera */
 .header {
   grid-template-columns: 100vw;
@@ -31,10 +36,48 @@ h1 {
 }
 
 .part1 {
-  margin: 50px 40px 50px 40px;
+  /* margin: 50px 40px 50px 40px; */
   display: grid;
-  grid-template-columns: 100vw;
-  grid-template-rows: 300px 200px;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 70px;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
+}
+
+.info-centre {
+  align-self: center;
+  height: 70px;
+}
+
+.part-2i3 {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 90px 300px 70px;
+  align-items: center;
+  justify-items: flex-start;
+}
+
+.patata {
+  justify-self: center;
+}
+
+ul > li {
+  list-style-type: none;
+}
+ul > li::before {
+  content: "-";
+  margin-right: 0.5rem;
+}
+
+ol {
+  list-style: none;
+}
+
+ol > li {
+  counter-increment: listCounter;
+  margin-bottom: 0.4rem;
+}
+ol > li::before {
+  content: counter(listCounter) ")";
+  margin-right: 0.5rem;
 }
