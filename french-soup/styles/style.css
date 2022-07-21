@@ -1,9 +1,40 @@
 /*Some necessary adjustments*/
-h1, body, html, main {
+h1,
+body,
+html,
+main {
   margin: 0;
 }
 /*Import the font and set the default size*/
 html {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+/* Capçalera */
+.header {
+  grid-template-columns: 100vw;
+  grid-template-rows: 600px;
+  background-image: url("../images/soup.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+h1 {
+  color: aliceblue;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.part1 {
+  margin: 50px 40px 50px 40px;
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 300px 200px;
+  align-items: center;
+  justify-content: center;
 }
